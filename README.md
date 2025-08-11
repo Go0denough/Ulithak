@@ -34,6 +34,19 @@ It runs Cowrie for the honeypot part, and Suricata for packet inspection and ale
 - Suricata IDS
 
 ---
+## Contents
+
+- discord_alert.sh — script to send alerts to Discord.
+- suricata_watch.sh — script that monitors Suricata logs and triggers alerts.
+- honeypottersetup.docx — detailed step-by-step setup guide.
+- Additional configs and instructions.
+
+## How to Use
+
+1. Clone this repo to your Ubuntu Server honeypot VM.
+2. Make sure all scripts are executable:  
+   ```bash
+   chmod +x discord_alert.sh suricata_watch.sh
 
 ## How I use it
 1. Start the Honeypot VM in VirtualBox (bridged adapter mode).
