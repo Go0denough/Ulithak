@@ -13,7 +13,7 @@ It runs Cowrie for the honeypot part, and Suricata for packet inspection and ale
 - Pretends to be a vulnerable SSH/Telnet box.
 - Records every command, keystroke, and upload.
 - Suricata checks all traffic and flags anything suspicious.
-- Can send alerts to Telegram (handy if I’m away from the lab).
+- Can send alerts to Discord (handy if I’m away from the lab).
 - Runs on a bridged network so it looks like a “real” target.
 
 ---
@@ -52,11 +52,11 @@ It runs Cowrie for the honeypot part, and Suricata for packet inspection and ale
 1. Start the Honeypot VM in VirtualBox (bridged adapter mode).
 2. Start the Kali Linux VM (same network as the honeypot).
 3. Tell Suricata which network interface to watch (the bridged one).
-4. (Optional) run the alert script so I get Telegram pings.
+4. (Optional) run the alert script so I get Discord pings.
 5. Check logs:
    - Cowrie: `/var/log/cowrie/cowrie.log`
    - Suricata (detailed): `/var/log/suricata/eve.json`
-   - Suricata (quick view): `/var/log/suricata/fast.log`
+   
 
 ---
 
